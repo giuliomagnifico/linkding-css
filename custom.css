@@ -1,0 +1,113 @@
+ul.bookmark-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+li[ld-bookmark-item] {
+  display: block;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+}
+
+li[ld-bookmark-item] .preview-image {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 4px 4px 0 0;
+  margin-bottom: 0.5rem;
+}
+
+li[ld-bookmark-item] .title,
+li[ld-bookmark-item] .url-display,
+li[ld-bookmark-item] .description,
+li[ld-bookmark-item] .tags,
+li[ld-bookmark-item] .actions {
+  display: block;
+}
+
+li[ld-bookmark-item] .title a {
+  font-weight: bold;
+  color: #111;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+li[ld-bookmark-item] .url-display {
+  color: #555;
+  padding-top: 4px;
+  font-size: 12px;
+}
+
+li[ld-bookmark-item] .url-display,
+li[ld-bookmark-item] .url-path {
+  padding-top: 4px;
+  font-size: 12px;
+}
+
+li[ld-bookmark-item] .description {
+  margin: 0.5rem 0;
+  color: #333;
+  color: var(--bookmark-description-color);
+  font-weight: var(--bookmark-description-weight);
+}
+
+li[ld-bookmark-item] .description.separate {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--ld-bookmark-description-max-lines, 1);
+  overflow: hidden;
+}
+
+li[ld-bookmark-item] .tags {
+  margin-bottom: 0.5rem;
+}
+
+li[ld-bookmark-item] .tags a {
+  display: inline-block;
+  margin-right: 0.25rem;
+  background: #e6f2f0;
+  color: #005f73;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 0px;
+  color: #5755d8;
+  background: none;
+}
+
+li[ld-bookmark-item] .actions,
+li[ld-bookmark-item] .extra-actions {
+  align-items: baseline;
+  column-gap: var(--unit-2);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  color: var(--bookmark-actions-color);
+  font-size: var(--font-size-sm);
+}
+
+li[ld-bookmark-item] .actions a,
+li[ld-bookmark-item] .actions button.btn-link {
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  li[ld-bookmark-item] .extra-actions {
+    margin-top: var(--unit-1);
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  li[ld-bookmark-item] {
+    width: 100%;
+  }
+}
