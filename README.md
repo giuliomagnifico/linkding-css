@@ -2,8 +2,7 @@ This is a custom CSS style for the [Linkding](https://linkding.link/) bookmarks 
 
 **Web**
 
-![lnk](https://github.com/user-attachments/assets/e7e879ff-733d-4886-83d9-0cfbcf80960b)
-
+![lnk](https://github.com/user-attachments/assets/c91f8cb5-633e-4be5-bf2d-59d49c0805fc)
 
 **Mobile**
 
