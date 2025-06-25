@@ -6,7 +6,7 @@ ul.bookmark-list {
 
 li[ld-bookmark-item] {
   display: block;
-  background: #fff;
+  background: linear-gradient(to top, #f5f5f5, #ffffff);
   border: 1px solid #ddd;
   border-radius: 6px;
   padding: 1rem;
@@ -46,7 +46,6 @@ li[ld-bookmark-item] .url-display {
   font-size: 12px;
 }
 
-li[ld-bookmark-item] .url-display,
 li[ld-bookmark-item] .url-path {
   padding-top: 4px;
   font-size: 12px;
@@ -54,7 +53,6 @@ li[ld-bookmark-item] .url-path {
 
 li[ld-bookmark-item] .description {
   margin: 0.5rem 0;
-  color: #333;
   color: var(--bookmark-description-color);
   font-weight: var(--bookmark-description-weight);
 }
@@ -78,6 +76,10 @@ li[ld-bookmark-item] .tags a {
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
   text-decoration: none;
+}
+
+:is(li[ld-bookmark-item] .tags) a,
+:is(li[ld-bookmark-item] .tags) a:visited:hover {
   padding: 0px;
   color: #5755d8;
   background: none;
@@ -94,8 +96,8 @@ li[ld-bookmark-item] .extra-actions {
   font-size: var(--font-size-sm);
 }
 
-li[ld-bookmark-item] .actions a,
-li[ld-bookmark-item] .actions button.btn-link {
+:is(li[ld-bookmark-item] .actions) a,
+:is(li[ld-bookmark-item] .actions) button.btn-link {
   font-size: 12px;
 }
 
