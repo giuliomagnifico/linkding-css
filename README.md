@@ -7,4 +7,5 @@ This is a custom CSS style for the [Linkding](https://linkding.link/) bookmarks 
 
 **Mobile**
 
-![lnk-mobile](https://github.com/user-attachments/assets/684bd845-8f72-4256-8750-c8d4fd276b28)
+![lnk-mobile](https://github.com/user-attachments/assets/17d5f506-d451-41ce-abd7-28e173a9ff5d)
+
