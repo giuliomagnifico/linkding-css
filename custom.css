@@ -1,13 +1,16 @@
-ul.bookmark-list {
+ld-bookmark-page ul.bookmark-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-li[ld-bookmark-item] {
+ld-bookmark-page ul.bookmark-list > li[data-bookmark-id] {
   display: block;
-  background: linear-gradient(to top, #f5f5f5, #ffffff);
-  border: 1px solid #ddd;
+  background: linear-gradient(to top, #fbfbfb, #ffffff);
+  border: 1px solid #eeeeee;
   border-radius: 6px;
   padding: 1rem;
   width: 100%;
@@ -16,59 +19,52 @@ li[ld-bookmark-item] {
   position: relative;
 }
 
-li[ld-bookmark-item] .preview-image {
-  width: 100%;
-  height: auto;
-  max-height: 200px;
-  object-fit: cover;
-  border-radius: 4px 4px 0 0;
-  margin-bottom: 0.5rem;
-}
-
-li[ld-bookmark-item] .title,
-li[ld-bookmark-item] .url-display,
-li[ld-bookmark-item] .description,
-li[ld-bookmark-item] .tags,
-li[ld-bookmark-item] .actions {
+ld-bookmark-page ul.bookmark-list > li[data-bookmark-id] > .content {
   display: block;
 }
 
-li[ld-bookmark-item] .title a {
+ld-bookmark-page ul.bookmark-list > li[data-bookmark-id] .title {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+ld-bookmark-page ul.bookmark-list > li[data-bookmark-id] .title a {
   font-weight: bold;
   color: #111;
   text-decoration: none;
   font-size: 18px;
 }
 
-li[ld-bookmark-item] .url-display {
+ld-bookmark-page ul.bookmark-list > li[data-bookmark-id] .url-display {
   color: #555;
   padding-top: 4px;
   font-size: 12px;
 }
 
-li[ld-bookmark-item] .url-path {
+ld-bookmark-page ul.bookmark-list > li[data-bookmark-id] .url-path {
   padding-top: 4px;
   font-size: 12px;
 }
 
-li[ld-bookmark-item] .description {
+ld-bookmark-page ul.bookmark-list > li[data-bookmark-id] .description {
   margin: 0.5rem 0;
   color: var(--bookmark-description-color);
   font-weight: var(--bookmark-description-weight);
 }
 
-li[ld-bookmark-item] .description.separate {
+ld-bookmark-page ul.bookmark-list > li[data-bookmark-id] .description.separate {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: var(--ld-bookmark-description-max-lines, 1);
   overflow: hidden;
 }
 
-li[ld-bookmark-item] .tags {
+ld-bookmark-page ul.bookmark-list > li[data-bookmark-id] .tags {
   margin-bottom: 0.5rem;
 }
 
-li[ld-bookmark-item] .tags a {
+ld-bookmark-page ul.bookmark-list > li[data-bookmark-id] .tags a {
   display: inline-block;
   margin-right: 0.25rem;
   background: #e6f2f0;
@@ -78,38 +74,44 @@ li[ld-bookmark-item] .tags a {
   text-decoration: none;
 }
 
-:is(li[ld-bookmark-item] .tags) a,
-:is(li[ld-bookmark-item] .tags) a:visited:hover {
-  padding: 0px;
+ld-bookmark-page :is(ul.bookmark-list > li[data-bookmark-id] .tags) a,
+ld-bookmark-page :is(ul.bookmark-list > li[data-bookmark-id] .tags) a:visited:hover {
+  padding: 0;
   color: #5755d8;
   background: none;
 }
 
-li[ld-bookmark-item] .actions,
-li[ld-bookmark-item] .extra-actions {
-  align-items: baseline;
-  column-gap: var(--unit-2);
+ld-bookmark-page ul.bookmark-list > li[data-bookmark-id] .actions,
+ld-bookmark-page ul.bookmark-list > li[data-bookmark-id] .extra-actions {
   display: flex;
   flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: var(--unit-2);
   padding: 5px;
   color: var(--bookmark-actions-color);
   font-size: var(--font-size-sm);
 }
 
-:is(li[ld-bookmark-item] .actions) a,
-:is(li[ld-bookmark-item] .actions) button.btn-link {
+ld-bookmark-page :is(ul.bookmark-list > li[data-bookmark-id] .actions) a,
+ld-bookmark-page :is(ul.bookmark-list > li[data-bookmark-id] .actions) button.btn-link {
   font-size: 12px;
 }
 
 @media (max-width: 600px) {
-  li[ld-bookmark-item] .extra-actions {
+  ld-bookmark-page ul.bookmark-list > li[data-bookmark-id] .extra-actions {
     margin-top: var(--unit-1);
     width: 100%;
   }
 }
 
-@media screen and (max-width: 700px) {
-  li[ld-bookmark-item] {
+@media (max-width: 700px) {
+  ld-bookmark-page ul.bookmark-list > li[data-bookmark-id] {
     width: 100%;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  ld-bookmark-page .section-header {
+    border-bottom: none !important;
   }
 }
