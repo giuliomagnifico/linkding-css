@@ -7,6 +7,7 @@ This is a custom CSS style for the [Linkding](https://linkding.link/) bookmarks 
 
 **Mobile**
 
-<img width="1179" height="2556" alt="mobile" src="https://github.com/user-attachments/assets/d1f2f19d-6ec8-4e4f-848c-0c7ec5e94c46" />
+<img width="800" height="1734" alt="mobile" src="https://github.com/user-attachments/assets/600702dd-659a-4a03-a6af-39aa15caf4a8" />
+
 
 
