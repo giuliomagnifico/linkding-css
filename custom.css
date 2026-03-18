@@ -4,7 +4,7 @@ ld-bookmark-page ul.bookmark-list {
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.25rem;
 }
 
 ld-bookmark-page ul.bookmark-list > li[data-bookmark-id] {
@@ -12,7 +12,7 @@ ld-bookmark-page ul.bookmark-list > li[data-bookmark-id] {
   background: linear-gradient(to top, #fbfbfb, #ffffff);
   border: 1px solid #eeeeee;
   border-radius: 6px;
-  padding: 1rem;
+  padding: 0.5rem;
   width: 100%;
   box-sizing: border-box;
   margin: 0;
@@ -33,22 +33,22 @@ ld-bookmark-page ul.bookmark-list > li[data-bookmark-id] .title a {
   font-weight: bold;
   color: #111;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 ld-bookmark-page ul.bookmark-list > li[data-bookmark-id] .url-display {
   color: #555;
   padding-top: 4px;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 ld-bookmark-page ul.bookmark-list > li[data-bookmark-id] .url-path {
   padding-top: 4px;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 ld-bookmark-page ul.bookmark-list > li[data-bookmark-id] .description {
-  margin: 0.5rem 0;
+  margin: 0.2rem 0;
   color: var(--bookmark-description-color);
   font-weight: var(--bookmark-description-weight);
 }
@@ -61,7 +61,7 @@ ld-bookmark-page ul.bookmark-list > li[data-bookmark-id] .description.separate {
 }
 
 ld-bookmark-page ul.bookmark-list > li[data-bookmark-id] .tags {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.1rem;
 }
 
 ld-bookmark-page ul.bookmark-list > li[data-bookmark-id] .tags a {
@@ -94,7 +94,7 @@ ld-bookmark-page ul.bookmark-list > li[data-bookmark-id] .extra-actions {
 
 ld-bookmark-page :is(ul.bookmark-list > li[data-bookmark-id] .actions) a,
 ld-bookmark-page :is(ul.bookmark-list > li[data-bookmark-id] .actions) button.btn-link {
-  font-size: 12px;
+  font-size: 11px;
 }
 
 @media (max-width: 600px) {
