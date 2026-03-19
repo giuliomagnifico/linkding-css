@@ -115,3 +115,22 @@ ld-bookmark-page :is(ul.bookmark-list > li[data-bookmark-id] .actions) button.bt
     border-bottom: none !important;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  ld-bookmark-page ul.bookmark-list > li[data-bookmark-id] {
+    background: linear-gradient(to top, #1e1e1e, #2a2a2a);
+    border: 1px solid #333;
+  }
+
+  ld-bookmark-page ul.bookmark-list > li[data-bookmark-id] .title a {
+    color: #e0e0e0;
+  }
+
+  ld-bookmark-page ul.bookmark-list > li[data-bookmark-id] .url-display {
+    color: #aaa;
+  }
+
+  ld-bookmark-page ul.bookmark-list > li[data-bookmark-id] .tags a {
+    color: #7aa2f7;
+  }
+}
